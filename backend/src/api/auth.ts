@@ -64,7 +64,6 @@ auth.post("/login", async (c) => {
       message: result.message,
       hasToken: !!result.token,
       tokenLength: result.token ? result.token.length : 0,
-      user: result.user,
     });
 
     return c.json(
